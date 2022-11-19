@@ -2,6 +2,8 @@
 using Less13_Serialization;
 
 Members memb = new Members();
-ObjectExtentions.WriteToJsonFile<Members>(@"D:\TMS .Net\Less13_Serialization\Member", memb);
+ObjectExtentions.WriteToJsonFile<Members>(@"D:\TMS .Net\Less13_Serialization\Less13_Serialization\Member.json", memb);
 
-Members membRestored = ObjectExtentions.ReadFromJsonFile<Members>(@"D:\TMS .Net\Less13_Serialization\Member");
+Squad squadRestored = ObjectExtentions.ReadFromJsonFile<Squad>(@"D:\TMS .Net\Less13_Serialization\Less13_Serialization\SuperHeroSquad.json");
+
+ObjectExtentions.WriteToXmlFile<Squad>(@"D:\TMS .Net\Less13_Serialization\Less13_Serialization.XmlFile.xml", squadRestored);
